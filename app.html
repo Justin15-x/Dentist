@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Molar — Panel del consultorio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="sidebar__logo"><span>🦷</span> Molar</div>
+
+    <div class="sidebar__user" id="sidebar-user">
+      <strong id="sidebar-user-name">—</strong>
+      <span id="sidebar-user-email">—</span>
+    </div>
+
+    <ul class="nav-list">
+      <li><a class="nav-link" data-route="dashboard"><span class="dot"></span>Resumen</a></li>
+      <li><a class="nav-link" data-route="patients"><span class="dot"></span>Pacientes</a></li>
+      <li><a class="nav-link" data-route="appointments"><span class="dot"></span>Citas</a></li>
+    </ul>
+
+    <button class="sidebar__logout" id="logout-btn">Cerrar sesión</button>
+  </aside>
+
+  <main class="main" id="view-root">
+    <!-- Las vistas se inyectan aquí vía JS -->
+  </main>
+</div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
